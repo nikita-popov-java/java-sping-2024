@@ -23,6 +23,9 @@ public class StudentService {
     }
 
     public Student removeStudent(Long id) {
+        if (!students.containsKey(id))
+            throw new IllegalArgumentException("Студента с id=%d не существует!".formatted(id));
+
         return students.remove(id);
     }
 
