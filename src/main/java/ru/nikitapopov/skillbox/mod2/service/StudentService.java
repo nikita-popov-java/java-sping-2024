@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Service
+//@Service
 public class StudentService {
 
     private final Map<Long, Student> students = new HashMap<>();
