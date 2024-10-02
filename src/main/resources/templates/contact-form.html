@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+<h1 th:text="${#strings.isEmpty(contact.id) ? 'Create Contact' : 'Edit Contact'}"></h1>
+<form th:object="${contact}" th:action="@{/contacts/save}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    <label for="firstName">First Name:</label>
+    <input type="text" th:field="*{firstName}" />
+    <br/>
+    <label for="lastName">Last Name:</label>
+    <input type="text" th:field="*{lastName}" />
+    <br/>
+    <label for="email">Email:</label>
+    <input type="email" th:field="*{email}" />
+    <br/>
+    <label for="phone">Phone:</label>
+    <input type="text" th:field="*{phone}" />
+    <br/>
+    <button type="submit">Save</button>
+</form>
+<a href="/contacts">Back to list</a>
+</body>
+</html>

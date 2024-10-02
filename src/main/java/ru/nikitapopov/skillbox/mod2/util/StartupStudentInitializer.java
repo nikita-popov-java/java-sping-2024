@@ -7,9 +7,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 import ru.nikitapopov.skillbox.mod2.service.StudentService;
 
-@Component
+//@Component
 @RequiredArgsConstructor
-@ConfigurationProperties(prefix = "student.initializer")
+//@ConfigurationProperties(prefix = "student.initializer")
 public class StartupStudentInitializer {
 
     @Setter

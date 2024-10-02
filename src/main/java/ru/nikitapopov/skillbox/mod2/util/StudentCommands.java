@@ -8,7 +8,7 @@ import ru.nikitapopov.skillbox.mod2.model.event.StudentCreatedEvent;
 import ru.nikitapopov.skillbox.mod2.model.event.StudentRemovedEvent;
 import ru.nikitapopov.skillbox.mod2.service.StudentService;
 
-@ShellComponent
+//@ShellComponent
 @RequiredArgsConstructor
 public class StudentCommands {
 
