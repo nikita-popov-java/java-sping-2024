@@ -1,4 +1,7 @@
 spring:
+  shell:
+    interactive:
+      enabled: true
   application:
     name: Module 1
   datasource:
@@ -9,3 +12,6 @@ spring:
 contact:
   file:
     path: src/main/resources/contacts.txt
+student:
+  initializer:
+    enabled: true
