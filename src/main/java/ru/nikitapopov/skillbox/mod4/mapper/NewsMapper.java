@@ -10,7 +10,7 @@ public interface NewsMapper {
     @Mapping(target = "author", source = "author.username")
     @Mapping(target = "category", source = "category.name")
     NewsDTO toDto(News news);
-    @Mapping(target = "author.username", source = "author")
-    @Mapping(target = "category.name", source = "category")
+    @Mapping(target = "author.id", source = "author")
+    @Mapping(target = "category.id", source = "category")
     News toEntity(NewsDTO newsDTO);
 }

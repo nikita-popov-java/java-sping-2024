@@ -4,7 +4,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.nikitapopov.skillbox.mod4.CheckOwnership;
+import ru.nikitapopov.skillbox.mod4.CheckCommentOwnership;
 import ru.nikitapopov.skillbox.mod4.dto.CommentDTO;
 import ru.nikitapopov.skillbox.mod4.service.CommentService;
 
@@ -28,13 +28,13 @@ public class CommentController {
     }
 
     @PutMapping("/{commentId}")
-    @CheckOwnership
+    @CheckCommentOwnership
     public ResponseEntity<CommentDTO> updateComment(@PathVariable Long commentId, @Valid @RequestBody CommentDTO commentDTO) {
         return ResponseEntity.ok(commentService.updateComment(commentId, commentDTO));
     }
 
     @DeleteMapping("/{commentId}")
-    @CheckOwnership
+    @CheckCommentOwnership
     public ResponseEntity<Void> deleteComment(@PathVariable Long commentId) {
         commentService.deleteComment(commentId);
         return ResponseEntity.noContent().build();

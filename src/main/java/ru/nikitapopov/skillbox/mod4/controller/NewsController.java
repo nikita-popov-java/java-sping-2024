@@ -6,7 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.nikitapopov.skillbox.mod4.CheckOwnership;
+import ru.nikitapopov.skillbox.mod4.CheckNewsOwnership;
 import ru.nikitapopov.skillbox.mod4.dto.NewsDTO;
 import ru.nikitapopov.skillbox.mod4.service.NewsService;
 
@@ -41,13 +41,13 @@ public class NewsController {
     }
 
     @PutMapping("/{newsId}")
-    @CheckOwnership
+    @CheckNewsOwnership
     public ResponseEntity<NewsDTO> updateNews(@PathVariable Long newsId, @Valid @RequestBody NewsDTO newsDTO) {
         return ResponseEntity.ok(newsService.updateNews(newsId, newsDTO));
     }
 
     @DeleteMapping("/{newsId}")
-    @CheckOwnership
+    @CheckNewsOwnership
     public ResponseEntity<Void> deleteNews(@PathVariable Long newsId) {
         newsService.deleteNews(newsId);
         return ResponseEntity.noContent().build();
