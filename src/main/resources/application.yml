@@ -3,15 +3,23 @@ spring:
     interactive:
       enabled: true
   application:
-    name: Module 1
+    name: SKILLBOX
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
-contact:
-  file:
-    path: src/main/resources/contacts.txt
-student:
-  initializer:
-    enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+#contact:
+#  file:
+#    path: src/main/resources/contacts.txt
+#student:
+#  initializer:
+#    enabled: true
