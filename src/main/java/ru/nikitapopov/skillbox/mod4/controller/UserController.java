@@ -8,7 +8,7 @@ import ru.nikitapopov.skillbox.mod4.service.UserService;
 
 import java.util.List;
 
-@RestController
+//@RestController
 @RequestMapping("/api/users")
 public class UserController {
     private final UserService userService;

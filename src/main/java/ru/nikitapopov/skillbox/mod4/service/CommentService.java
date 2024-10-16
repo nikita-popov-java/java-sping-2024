@@ -1,7 +1,6 @@
 package ru.nikitapopov.skillbox.mod4.service;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 import ru.nikitapopov.skillbox.mod4.dto.CommentDTO;
 import ru.nikitapopov.skillbox.mod4.mapper.CommentMapper;
 import ru.nikitapopov.skillbox.mod4.repository.CommentRepository;
@@ -9,7 +8,7 @@ import ru.nikitapopov.skillbox.mod4.repository.NewsRepository;
 
 import java.util.List;
 
-@Service
+//@Service
 @RequiredArgsConstructor
 public class CommentService {
     private final CommentRepository commentRepository;

@@ -3,13 +3,12 @@ package ru.nikitapopov.skillbox.mod4.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
 import ru.nikitapopov.skillbox.mod4.dto.NewsDTO;
 import ru.nikitapopov.skillbox.mod4.mapper.NewsMapper;
 import ru.nikitapopov.skillbox.mod4.model.News;
 import ru.nikitapopov.skillbox.mod4.repository.NewsRepository;
 
-@Service
+//@Service
 @RequiredArgsConstructor
 public class NewsService {
 

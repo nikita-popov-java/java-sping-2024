@@ -10,7 +10,7 @@ import ru.nikitapopov.skillbox.mod4.service.CommentService;
 
 import java.util.List;
 
-@RestController
+//@RestController
 @RequestMapping("/api/comments")
 @RequiredArgsConstructor
 public class CommentController {

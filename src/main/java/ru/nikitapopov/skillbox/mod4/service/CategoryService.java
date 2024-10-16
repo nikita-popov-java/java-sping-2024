@@ -1,7 +1,6 @@
 package ru.nikitapopov.skillbox.mod4.service;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 import ru.nikitapopov.skillbox.mod4.dto.CategoryDTO;
 import ru.nikitapopov.skillbox.mod4.mapper.CategoryMapper;
 import ru.nikitapopov.skillbox.mod4.repository.CategoryRepository;
@@ -9,7 +8,7 @@ import ru.nikitapopov.skillbox.mod4.repository.CategoryRepository;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Service
+//@Service
 @RequiredArgsConstructor
 public class CategoryService {
 

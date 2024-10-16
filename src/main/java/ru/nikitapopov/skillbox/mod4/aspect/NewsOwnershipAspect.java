@@ -2,16 +2,14 @@ package ru.nikitapopov.skillbox.mod4.aspect;
 
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import ru.nikitapopov.skillbox.mod4.repository.CommentRepository;
 import ru.nikitapopov.skillbox.mod4.repository.NewsRepository;
 
-@Aspect
-@Component
+//@Aspect
+//@Component
 @RequiredArgsConstructor
 public class NewsOwnershipAspect {
 

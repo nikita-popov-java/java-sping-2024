@@ -10,7 +10,7 @@ import ru.nikitapopov.skillbox.mod4.CheckNewsOwnership;
 import ru.nikitapopov.skillbox.mod4.dto.NewsDTO;
 import ru.nikitapopov.skillbox.mod4.service.NewsService;
 
-@RestController
+//@RestController
 @RequestMapping("/api/news")
 @RequiredArgsConstructor
 public class NewsController {

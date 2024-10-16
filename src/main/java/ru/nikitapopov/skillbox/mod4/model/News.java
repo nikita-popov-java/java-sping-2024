@@ -6,8 +6,8 @@ import jakarta.validation.constraints.NotBlank;
 import java.util.List;
 
 @Data
-@Entity
-@Table(name = "news")
+//@Entity
+//@Table(name = "news")
 public class News {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

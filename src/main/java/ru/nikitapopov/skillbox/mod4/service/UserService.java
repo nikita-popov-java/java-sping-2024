@@ -1,7 +1,6 @@
 package ru.nikitapopov.skillbox.mod4.service;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 import ru.nikitapopov.skillbox.mod4.dto.UserDTO;
 import ru.nikitapopov.skillbox.mod4.mapper.UserMapper;
 import ru.nikitapopov.skillbox.mod4.repository.UserRepository;
@@ -9,7 +8,7 @@ import ru.nikitapopov.skillbox.mod4.repository.UserRepository;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Service
+//@Service
 @RequiredArgsConstructor
 public class UserService {
 

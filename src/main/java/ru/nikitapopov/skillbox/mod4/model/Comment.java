@@ -5,8 +5,8 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
 @Data
-@Entity
-@Table(name = "comments")
+//@Entity
+//@Table(name = "comments")
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

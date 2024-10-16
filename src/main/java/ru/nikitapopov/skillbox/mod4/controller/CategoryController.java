@@ -8,7 +8,7 @@ import ru.nikitapopov.skillbox.mod4.service.CategoryService;
 
 import java.util.List;
 
-@RestController
+//@RestController
 @RequestMapping("/api/categories")
 public class CategoryController {
 
