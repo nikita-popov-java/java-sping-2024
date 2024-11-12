@@ -1,22 +1,13 @@
+# Конфигурация MongoDB
 spring:
-  kafka:
-    bootstrap-servers: localhost:9092
-    consumer:
-      group-id: {GROUP_ID}
-  shell:
-    interactive:
-      enabled: true
-  application:
-    name: SKILLBOX
   data:
     mongodb:
-      uri: mongodb://localhost:27017/task-tracker
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: postgres
+      uri: mongodb://localhost:27017/newsdb
+      database: newsdb
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
